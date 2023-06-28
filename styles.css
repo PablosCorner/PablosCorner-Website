@@ -1,0 +1,390 @@
+#page-container {
+	position: relative;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-bottom: auto;
+}
+
+html,
+body {
+	background-color: #fecb65;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+a {
+	color: #CB5457;
+}
+
+h1 {
+	color: #705000;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-family: "Futura PT";
+	font-weight: bold;
+	font-size: 30px;
+}
+
+p {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #705000;
+	text-align: left;
+	font-family: "Futura PT";
+	font-weight: normal;
+	font-size: 18px;
+}
+
+i {
+	color: white;
+	text-align: left;
+}
+
+#footer {
+	height: 15;
+	width: 100%;
+	background-color: #daa44e;
+	z-index: 1;
+}
+
+.hero-image {
+	background-image: url("pictures/siteBanner.webp");
+	min-height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+@media only screen and (max-width: 110vh) {
+	.hero-image {
+		background-size: cover;
+		min-height: 0;
+		padding-top: 27.75%;
+	}
+}
+
+p.copyright {
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+	width: 100%;
+	color: #705000;
+	font-family: "Futura PT";
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+p.shadow {
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+p.center {
+	text-align: center;
+}
+
+p.home-desc {
+	font-size: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Navigation menu */
+#nav-bar {
+	background-color: #daa44e;
+	user-select: none;
+	z-index: 1;
+}
+
+#nav-bar a {
+	display: inline-block;
+	color: #705000;
+	font-family: "Futura PT";
+	font-weight: normal;
+	text-align: center;
+	padding: 15px 16px;
+	text-decoration: none;
+	user-select: none;
+}
+
+#nav-bar a:hover {
+	background-color: white !important;
+	transition: 0.2s;
+	transition-property: background-color, color;
+	color: black !important;
+}
+
+#nav-bar a.discord:hover {
+	background-color: white !important;
+	color: black !important;
+	transition: 0.2s;
+	transition-property: background-color, color;
+}
+
+#nav-home {
+	float: left;
+}
+
+#nav-links {
+	float: right;
+}
+
+#nav-links #nav-hamburger {
+	display: none;
+}
+
+#nav-links #nav-hamburger i {
+	filter: invert(77%) sepia(94%) saturate(1416%) hue-rotate(33deg) brightness(96%) contrast(101%);
+}
+
+#nav-links-list {
+	display: flex;
+}
+
+#nav-links .nav-element {
+	padding: 0;
+	margin: 0;
+	background-color: #daa44e;
+	display: inline-block;
+}
+
+#nav-links .nav-element a.discord {
+	background-color: #5865F2;
+	color: white;
+}
+
+#nav-links .nav-element .nav-dropdown {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+#nav-links .nav-element .nav-dropdown a {
+	color: rgb(0, 0, 0);
+	padding: 15px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+#nav-links .nav-element .nav-dropdown a.youtube {
+	background-color: #f80000;
+	color: white;
+}
+
+#nav-links .nav-element .nav-dropdown a.mastodon {
+	background-color: #5a40d2;
+	color: white;
+}
+
+#nav-links .nav-element .nav-dropdown a.odysee {
+	background-color: #38274c;
+	color: white;
+}
+
+#nav-links .nav-element .nav-dropdown a.twitch {
+	background-color: #6441a5;
+	color: white;
+}
+
+#nav-links .nav-element .nav-dropdown a.bandcamp {
+	background-color: #3c9aaa;
+	color: white;
+}
+
+#nav-links .nav-element:hover .nav-dropdown {
+	display: block;
+}
+
+@media only screen and (max-width: 600px) {
+	#nav-links a#nav-hamburger {
+		display: inline-block;
+	}
+
+	#nav-links-list {
+		position: absolute;
+		right: 0;
+		display: none;
+	}
+
+	#nav-links .nav-element {
+		display: flex;
+	}
+
+	#nav-links .nav-element a {
+		text-align: left;
+		width: 150px;
+	}
+
+	#nav-links .nav-element .nav-dropdown {
+		position: absolute;
+		width: 150px;
+		right: 150px;
+	}
+
+	#nav-links:hover #nav-links-list {
+		display: block;
+	}
+}
+
+/* Add rounded corners to the corners of the image */
+img {
+	vertical-align: middle;
+}
+
+#styled {
+	border-radius: 8px 8px 8px 8px;
+	box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.6);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.cardcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/* Style the counter cards */
+.card {
+	padding: 16px;
+	margin: 10px;
+	text-align: center;
+	background-color: #daa44e;
+	border-radius: 10px;
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-stealth {
+	padding: 8px;
+	margin: 5px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-stealth#home-desc {
+	max-width: 1200px;
+}
+
+.card-contents {
+	margin-bottom: auto;
+}
+
+/* Style buttons */
+.dl-btn a {
+	background-color: rgb(196, 7, 7);
+	border: none;
+	color: white;
+	font-family: "Futura PT";
+	padding: 12px 30px;
+	width: 100%;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 10px;
+	transition: 0.3s;
+	display: block;
+	text-decoration: none;
+	user-select: none;
+	margin-top: 12px;
+}
+
+.comingsoon-btn p {
+	background-color: rgb(66, 66, 66);
+	border: none;
+	color: rgb(184, 184, 184);
+	font-family: "Futura PT";
+	text-align: center;
+	margin: 0%;
+	padding: 12px 30px;
+	font-size: 20px;
+	border-radius: 10px;
+	transition: 0.3s;
+	display: block;
+	user-select: none;
+	margin-top: auto;
+}
+
+/* Darker background on mouse-over */
+.dl-btn a:hover {
+	background-color: rgb(225, 70, 65);
+}
+
+
+/* Hack around horrible YouTube embed sizing */
+.video_wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.6);
+}
+
+.video_wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main-video-wrap-1 {
+	max-width: 640px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.main-video-wrap-2 {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.main-video-wrap-2 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.codebox {
+	background-color: black;
+	overflow-y: scroll;
+	width: 100%;
+	height: 260px;
+	border: 2px solid #00e600;
+	padding: 10px;
+	margin-right: 15%;
+	margin-right: 15%;
+	text-align: left
+}
+
+.codebox * {
+	color: #00e600;
+	font-family: "Lucida Console";
+	font-size: 15px;
+	margin: 0px;
+}
+
+.codebox ul {
+	padding-left: 25px;
+}
+
+.codebox ul ul {
+	padding-left: 15px;
+}

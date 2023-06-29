@@ -1,10 +1,10 @@
 const copyright = "PablosCorner";
-const websiteURL = "http://pabloscorner.akawah.net";
+const websiteURL = "https://pabloscorner.github.io/PablosCorner-Website/";
 
 const homeText = "Home";
 
 const navBarContent = [
-	["SM64 Editor Archives", "/archives", []],
+	["SM64 Editor Archives", "/PablosCorner-Website/archives", []],
 	["Media", "", [
 		["YouTube", "https://www.youtube.com/PablosCorner"],
 		["Mastodon", "https://masto.ai/@pabloscorner"],
@@ -18,7 +18,7 @@ const navBarContent = [
 	["Discord", "https://www.discord.com/invite/3GCn9hfWNf", []]
 ];
 
-const sm64ArchiveFolder = "/SM64EditorArchive";
+const sm64ArchiveFolder = "/PablosCorner-Website/SM64EditorArchive";
 const sm64ArchivePrefix = "SM64%20Editor%20";
 const sm64ArchiveExt = "zip";
 

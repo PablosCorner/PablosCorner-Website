@@ -1,10 +1,3 @@
-#page-container {
-	position: relative;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	margin-bottom: auto;
-}
-
 html,
 body {
 	background-color: #fecb65;
@@ -94,6 +87,22 @@ p.home-desc {
 	font-size: 20px;
 	margin-left: 0px;
 	margin-right: 0px;
+}
+
+.page-container {
+	position: relative;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin: 0px auto auto auto;
+}
+
+.page-container#home-container {
+	max-width: 1200px;
+}
+
+.twitter-embed-container {
+	width: fit-content;
+	margin: 0px auto;
 }
 
 /* Navigation menu */
@@ -251,14 +260,13 @@ img {
 	box-sizing: border-box;
 }
 
+/* Style the counter cards */
 .cardcontainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-
-/* Style the counter cards */
 .card {
 	padding: 16px;
 	margin: 10px;
@@ -268,18 +276,6 @@ img {
 	width: 460px;
 	display: flex;
 	flex-direction: column;
-}
-
-.card-stealth {
-	padding: 8px;
-	margin: 5px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-}
-
-.card-stealth#home-desc {
-	max-width: 1200px;
 }
 
 .card-contents {
@@ -325,7 +321,6 @@ img {
 	background-color: rgb(225, 70, 65);
 }
 
-
 /* Hack around horrible YouTube embed sizing */
 .video_wrapper {
 	position: relative;
@@ -362,6 +357,7 @@ img {
 	height: 100%;
 }
 
+/* Codebox */
 .codebox {
 	background-color: black;
 	overflow-y: scroll;

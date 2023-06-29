@@ -55,7 +55,7 @@ i {
 }
 
 .hero-image {
-	background-image: url("pictures/siteBanner.webp");
+	background-image: url("/pictures/siteBanner.webp");
 	min-height: 30%;
 	background-position: center;
 	background-repeat: no-repeat;
